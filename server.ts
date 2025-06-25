@@ -1011,10 +1011,16 @@ app.post("/public-log-in", (req, res, next) => {
       }
     );
 
+    // res.cookie("publictoken", token, {
+    //   httpOnly: true,
+    //   secure: false,
+    //   sameSite: "strict",
+    //   maxAge: 60 * 60 * 1000,
+    // });
     res.cookie("publictoken", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "strict",
+      secure: true,
+      sameSite: "none",
       maxAge: 60 * 60 * 1000,
     });
 
