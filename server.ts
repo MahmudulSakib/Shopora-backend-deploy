@@ -41,8 +41,8 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      "https://shopora-app-adminpanel-blex-e7dfxifxm.vercel.app",
-      "https://shopora-app-main-2k7s6nvhv-mahmudul-h-sakibs-projects.vercel.app",
+      "https://shopora-app-adminpanel-blex.vercel.app",
+      "https://shopora-app-main-ui.vercel.app",
     ],
     credentials: true,
   },
@@ -66,8 +66,8 @@ declare global {
 }
 
 const allowedOrigins = [
-  "https://shopora-app-adminpanel-blex-e7dfxifxm.vercel.app",
-  "https://shopora-app-main-2k7s6nvhv-mahmudul-h-sakibs-projects.vercel.app",
+  "https://shopora-app-adminpanel-blex.vercel.app",
+  "https://shopora-app-main-ui.vercel.app",
 ];
 
 app.use(
@@ -1163,8 +1163,8 @@ app.post(
           },
           quantity: item.quantity,
         })),
-        success_url: `https://shopora-app-main-2k7s6nvhv-mahmudul-h-sakibs-projects.vercel.app/payment-success?sessionId={CHECKOUT_SESSION_ID}&orderId=${orderId}&trackingId=${trackingId}`,
-        cancel_url: `https://shopora-app-main-2k7s6nvhv-mahmudul-h-sakibs-projects.vercel.app/checkout`,
+        success_url: `https://shopora-app-main-ui.vercel.app/payment-success?sessionId={CHECKOUT_SESSION_ID}&orderId=${orderId}&trackingId=${trackingId}`,
+        cancel_url: `https://shopora-app-main-ui.vercel.app/checkout`,
         metadata: {
           orderId,
           trackingId,
