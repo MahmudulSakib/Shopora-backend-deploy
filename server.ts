@@ -40,7 +40,10 @@ const port = process.env.PORT || 8080;
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: [
+      "https://shopora-app-adminpanel-407elu7lr-mahmudul-h-sakibs-projects.vercel.app",
+      "http://localhost:3001",
+    ],
     credentials: true,
   },
 });
@@ -62,7 +65,10 @@ declare global {
   }
 }
 
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = [
+  "https://shopora-app-adminpanel-407elu7lr-mahmudul-h-sakibs-projects.vercel.app",
+  "http://localhost:3001",
+];
 
 app.use(
   cors({
