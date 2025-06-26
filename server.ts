@@ -1028,9 +1028,17 @@ app.post("/public-log-in", (req, res, next) => {
   })(req, res, next);
 });
 
+// app.post("/public-log-out", (req, res) => {
+//   res.clearCookie("publictoken");
+//   res.json({ message: "Logged out successfully" });
+// });
 app.post("/public-log-out", (req, res) => {
-  res.clearCookie("publictoken");
-  res.json({ message: "Logged out successfully" });
+  res.clearCookie("publictoken", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
+  res.status(200).json({ message: "Logged out successfully" });
 });
 
 app.post(
