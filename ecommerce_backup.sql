@@ -345,7 +345,7 @@ COPY drizzle.__drizzle_migrations (id, hash, created_at) FROM stdin;
 --
 
 COPY public.admin (id, email, password, created_at) FROM stdin;
-2b86bd44-3a9d-4ff5-8131-097cdcade1e5	mahmudulsakib.110@gmail.com	$2a$10$juKBUOl9WG3STH9qmrYWU.J/roL3EAGifaPq/rLA7/xKK31oOAeIW	2025-06-03 00:14:56.029447
+2b86bd44-3a9d-4ff5-8131-097cdcade1e5	 	$2a$10$juKBUOl9WG3STH9qmrYWU.J/roL3EAGifaPq/rLA7/xKK31oOAeIW	2025-06-03 00:14:56.029447
 \.
 
 
