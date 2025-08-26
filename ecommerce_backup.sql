@@ -527,8 +527,8 @@ c0509114-4958-4235-9d2d-90826df0ee5c	f42e9221-3da1-4024-8920-89e1ca1f3ac7	2025-0
 --
 
 COPY public.public_user (id, email, password, created_at) FROM stdin;
-20a56d03-d645-4527-a5c0-c367417cc034	mahmudulsakib.110@gmail.com	$2b$10$hj0C5fLCPCulXvDhvcODceCaV6/eahghS3adA2s3zcAuXXEaZzJy2	2025-06-15 21:22:36.249941
-8b9fe695-0af2-43d2-8ac7-26a377eac8b6	aramahmud@gmail.com	$2b$10$0g28Cp8fjeqpQGB6pOaJMeIUh48okBZQvO1YWH8Oih3gtj8PFQV2q	2025-06-16 21:43:38.858382
+20a56d03-d645-4527-a5c0-c367417cc034	$2b$10$hj0C5fLCPCulXvDhvcODceCaV6/eahghS3adA2s3zcAuXXEaZzJy2	2025-06-15 21:22:36.249941
+8b9fe695-0af2-43d2-8ac7-26a377	$2b$10$0g28Cp8fjeqpQGB6pOaJMeIUh48okBZQvO1YWH8Oih3gtj8PFQV2q	2025-06-16 21:43:38.858382
 \.
 
 
